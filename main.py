@@ -1,11 +1,11 @@
 
 
-from generic_mutator import *
+from generic_mutator_bytes import *
 
 if __name__=="__main__":
-	input_data = ""
+	input_data = b""
 	COUNT = 100000
 	for _ in range(COUNT):
-		mutate_generic(input_data)
-		#print(input_data)
+		input_data = mutate_generic(input_data)
+		print(input_data)
 	exit(0)
